@@ -1,0 +1,107 @@
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html5="http://www.w3.org/1999/xhtml">
+
+
+    <head>
+
+
+        <meta charset="utf-8">
+
+
+        <title>火影忍者</title>
+
+
+        <meta http-equiv="X-UA-Compatible" content="edge">
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <meta name="Keywords" content="js">
+
+
+        <meta name="description" content="js">
+
+
+        <link href="css/style.css" rel="stylesheet">
+<script>
+window.onload=function(){
+	var image=document.getElementsByTagName('img');
+	setInterval(function (){
+		var str=['3456789194','5432167898','3456712897','9876543216','1256789344','6789123452','4356789121','5678942137','8976543218'];
+		for(var i=0;i<image.length;i++){
+			//alert(parseInt(Math.floor(Math.random()*10+1)));
+			image[i].src=str[i].charAt(parseInt(Math.floor(Math.random()*10)))+'.jpeg';	
+		}
+	},1000);
+}
+</script>
+
+
+
+        <style>
+
+  
+            *{padding: 0; margin: 0;}
+
+
+            li{list-style: none;}
+
+
+            ul{width: 900px; height:750px; background:#ccc;margin: 20px auto;}
+
+
+            li{width:200px; height: 150px; margin: 50px; float: left; }
+
+
+        </style>
+
+
+
+
+
+    </head>
+ 
+
+    <body background="background.jpg">
+
+
+        <ul>
+
+
+            <li><a href="http://v.youku.com/v_show/id_XNTQwMTgxMTE2.html?from=y1.3-comic-gridtest-135-10061.203826-203823.2-2" target="_blank"><img src="1.jpeg" width="200px" height="150px" id="1l" onmouseover="changeLarge();" onmouseout="changesmall();"></a></li>
+
+            <li><img src="2.jpeg" width="200px" height="150px"></li>
+
+
+
+            <li><img src="3.jpeg" width="200px" height="150px"></li>
+
+
+            <li><img src="4.jpeg" width="200px" height="150px"></li>
+
+
+            <li><img src="5.jpeg" width="200px" height="150px"></li>
+
+
+            <li><img src="6.jpeg" width="200px" height="150px"></li>
+
+
+            <li><img src="7.jpeg" width="200px" height="150px"></li>
+
+
+            <li><img src="8.jpeg" width="200px" height="150px"></li>
+
+
+            <li><img src="9.jpeg" width="200px" height="150px"></li>
+
+
+        </ul>
+<embed height="70px" src="music.mp3"></embed>
+
+    </body>  
+
+
+</html> 
