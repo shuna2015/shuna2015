@@ -1,0 +1,25 @@
+{
+  "name": "call-external",
+  "description": "A powerful way to get data (http, redis, mongo)",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": {
+    "name": "The Developer",
+    "email": "the-developer@outlook.com"
+  },
+  "dependencies": {
+    "request": "2.12.0"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "main": "./Call.js",
+  "readme": "Call - A powerful way to get data \n\n<pre>\n  npm install call-external\n</pre>\n\nBuilt upon Request it has extended functionality. \n\n```javascript\nvar Call = require('call-external');\nnew Call().setObject({\"name\": \"The Developer\"}).timer().http({\"url\": \"http://google.com\", \"cb\": function(c){\n  console.log(c.data.substr(0,200));\n  console.log(c.obj.name);\n}});\n```\n\n\n```javascript\nnew Call().http({\"url\": \"http://google.com\", \"cb\": function(c){\n  console.log(c.data);\n}});\n```\n\nMore Features coming soon...as well as collaborating packages ",
+  "readmeFilename": "README.md",
+  "_id": "call-external@0.0.1",
+  "_shasum": "05eeeed01c3a9ef216b4e10076640f6a6f35b997",
+  "_from": "call-external@",
+  "_resolved": "https://registry.npmjs.org/call-external/-/call-external-0.0.1.tgz"
+}
