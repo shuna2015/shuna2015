@@ -1,0 +1,144 @@
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html5="http://www.w3.org/1999/xhtml">
+
+
+    <head>
+
+
+        <meta charset="utf-8">
+
+
+        <title>海贼王</title>
+
+
+        <meta http-equiv="X-UA-Compatible" content="edge">
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <meta name="Keywords" content="js">
+
+
+        <meta name="description" content="js">
+
+
+        <link href="css/style.css" rel="stylesheet">
+
+
+
+
+        <style>
+
+  
+            *{padding: 0; margin: 0;}
+
+
+            li{list-style: none;}
+
+
+            ul{width: 900px; height:750px; background:#ccc;margin: 20px auto;}
+
+
+            li{width:200px; height: 150px; margin: 50px; float: left; }
+
+
+        </style>
+
+
+
+
+
+    </head>
+ 
+
+    <body background="background.jpg">
+
+
+        <ul>
+
+
+            <li><a href="http://www.soku.com/search_video/q_%E6%B5%B7%E8%B4%BC%E7%8E%8B?f=1&kb=040200000000000__%E6%B5%B7%E8%B4%BC%E7%8E%8B&_rp=14340886517162Do" target="_blank"><img src="1l.jpg" width="200px" height="150px" id="1l" onmouseover="changeLarge();" onmouseout="changesmall();"></a></li>
+<script>  
+
+var img = document.getElementById("1l");  
+var s = null; 
+var l = null; 
+var step = 8; //调整改变尺寸的速度  
+var step_ = step * 2; 
+var maxWidth = img.width*1.5; //最大宽度  
+var maxHeight =img.height*1.5 ; //最大高度 
+var minWidth = 200; //最小宽度 
+var minHeight = 150; //最小高度
+ function changeLarge(){ 
+  clearInterval(s); 
+   l = setInterval("larger()",1);  
+  } 
+ function changesmall(){ 
+    clearInterval(l);
+	s = setInterval("smaller()",1); 
+ }  
+function smaller(){  
+ if(parseInt(img.width)>minWidth){ 
+  img.style.marginLeft = parseInt(img.style.marginLeft)+step; 
+  img.width = parseInt(img.width) - step_;  
+  }else{ 
+   clearInterval(s);  } 
+ if(parseInt(img.height)>minHeight){ 
+  img.style.marginTop = parseInt(img.style.marginTop)+step; 
+   img.height = parseInt(img.height) - step_;
+     }else{ 
+	  clearInterval(s); 
+	   }  
+	  } 
+function larger(){  
+if(parseInt(img.width) <maxWidth){  
+img.style.marginLeft = parseInt(img.style.marginLeft)-step; 
+img.width = parseInt(img.width) + step_;  
+ }else{ 
+  clearInterval(l); 
+ }  
+ if(parseInt(img.height) <maxHeight){  
+ img.style.marginTop = parseInt(img.style.marginTop)-step; 
+ img.height = parseInt(img.height) + step_; 
+  }else{  
+  clearInterval(l); 
+   }  
+   } 
+  </script>
+
+                 <li><img src="2l.jpeg" width="200px" height="150px"></li>
+
+
+
+            <li><img src="3l.jpeg" width="200px" height="150px"></li>
+
+
+            <li><img src="4l.jpeg" width="200px" height="150px"></li>
+
+
+            <li><img src="5l.jpeg" width="200px" height="150px"></li>
+
+
+            <li><img src="6l.jpeg" width="200px" height="150px"></li>
+
+
+            <li><img src="7l.jpeg" width="200px" height="150px"></li>
+
+
+            <li><img src="8l.jpeg" width="200px" height="150px"></li>
+
+
+            <li><img src="9l.jpeg" width="200px" height="150px"></li>
+
+
+        </ul>
+        
+<embed height="70px" src="music.mp3"></embed>
+
+    </body>  
+
+
+</html> 
